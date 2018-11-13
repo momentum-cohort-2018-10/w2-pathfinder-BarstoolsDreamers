@@ -67,8 +67,8 @@ def draw_image(list):
     for y, row in enumerate(list):
         for x, value in enumerate(row):
             img.putpixel((x, y), (value, value, value))
-    img.save('Image.png')
-    img.show('Image.png')
+    img.save('map_image.png')
+    img.show('map_image.png')
 
     return draw_image
 
@@ -85,19 +85,19 @@ def draw_image(list):
 #     map_image.show("map_test.png")
 
 
-# def draw_line(x, y):
-#     """
-#     Draw line on map. (aka: make it rain)
-#     """
+def draw_line(x, y):
+    """
+    Draw line on map. (aka: make it rain)
+    """
+    map_image = Image.open('map_image.png')
+    for x, row in enumerate(RGB_num_list):
+        map_image.putpixel((x, y), (0, 0, 300))
 
-#     for x, row in enumerate(RGB_num_list):
-#         map_image.putpixel((x, y), (0, 0, 300))
-
-#     img.save('map_test.png')
-#     img.show('map_test.png')
+    map_image.save('map_image.png')
+    map_image.show('map_image.png')
 
 
-# draw_line(0, 300)
+draw_line(0, 300)
 
 
 # PLAYING WITH CODE
