@@ -7,9 +7,9 @@ with open("elevation_small.txt") as text:
     """
 
     new_text = text.readlines()
-new_text = [word.replace('\n', '').strip().split() for word in new_text]
+    new_text = [word.replace('\n', '').strip().split() for word in new_text]
 
-height = [[int(new_text)for new_text in row] for row in new_text]
+    height = [[int(new_text)for new_text in row] for row in new_text]
 
 
 def find_max_height(data):
