@@ -61,7 +61,6 @@ def draw_image(list):
     """
     Paint (50 shades of) grey pixels
     """
-# draw_image was working and now it is not. HELP!
 
     list = RGB_num_list
     img = Image.new("RGB", (600, 600))
@@ -70,6 +69,8 @@ def draw_image(list):
             img.putpixel((x, y), (value, value, value))
     img.save('Image.png')
     img.show('Image.png')
+
+    return draw_image
 
 # thought I might be getting an error message because the file name is 'Image.png' which
 # is close to the .image method name..so, I tried to delete the Image.png and then create
