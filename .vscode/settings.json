@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/davidlndean_mbp/.local/share/virtualenvs/w2-pathfinder-BarstoolsDreamers-2sPiOm7-/bin/python"
+    "python.pythonPath": "/Users/davidlndean_mbp/.local/share/virtualenvs/w2-pathfinder-BarstoolsDreamers-2sPiOm7-/bin/python",
+    "python.linting.pylintEnabled": true
 }
